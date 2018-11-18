@@ -13,7 +13,7 @@ omega2_noise = omega2_c(2, :) - omega2_b(2, :);
 
 
 figure(1);
-plot(omega1_b(1, :), omega1_b(2, :), omega1_c(1, :), omega1_c(2, :), omega1_c(1, :). omega1_noise);
+plot(omega1_b(1, :), omega1_b(2, :), omega1_c(1, :), omega1_c(2, :), omega1_c(1, :), omega1_noise);
 legend("Response from omega 1 without noise", "Response from omega 1 with noise", "Noise");
 title("Response omega 1");
 xlabel("Time [s]");
