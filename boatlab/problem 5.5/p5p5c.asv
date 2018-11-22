@@ -38,4 +38,4 @@ plot(time_c, compass_bias_c);
 legend("Bias estimate");
 xlabel("Time [s]");
 ylabel("Bias [°]");
-title("Estimate of the bias");
+title("");

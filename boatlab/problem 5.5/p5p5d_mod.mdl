@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.83"
+    ComputedModelVersion    "1.86"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -69,7 +69,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1882.0, 875.0]
 	ZoomFactor		[1.5]
-	Offset			[-288.76041666666669, 9.7672897035830033]
+	Offset			[-244.37399989494369, 13.4866885656351]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -103,9 +103,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "martiege"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 22 11:31:22 2018"
-  RTWModifiedTimeStamp	  464787053
-  ModelVersionFormat	  "1.%<AutoIncrement:83>"
+  LastModifiedDate	  "Thu Nov 22 12:13:44 2018"
+  RTWModifiedTimeStamp	  464789620
+  ModelVersionFormat	  "1.%<AutoIncrement:86>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1175,7 +1175,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "61"
+    SIDHighWatermark	    "63"
     Block {
       BlockType		      SubSystem
       Name		      "Cargo ship"
@@ -2006,7 +2006,7 @@ Model {
       Name		      "Scope1"
       SID		      "54"
       Ports		      [1]
-      Position		      [715, 334, 745, 366]
+      Position		      [760, 334, 790, 366]
       ZOrder		      34
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
@@ -2032,7 +2032,7 @@ Model {
       Name		      "Scope2"
       SID		      "55"
       Ports		      [1]
-      Position		      [180, 324, 210, 356]
+      Position		      [170, 324, 200, 356]
       ZOrder		      35
       BlockMirror	      on
       NamePlacement	      "alternate"
@@ -2116,7 +2116,7 @@ Model {
       Name		      "To File"
       SID		      "53"
       Ports		      [1]
-      Position		      [715, 295, 835, 325]
+      Position		      [760, 295, 880, 325]
       ZOrder		      33
       Filename		      "data"
       MatrixName	      "data"
@@ -2131,6 +2131,24 @@ Model {
       ZOrder		      42
       BlockMirror	      on
       Filename		      "p5p5d_com.mat"
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "To File2"
+      SID		      "62"
+      Ports		      [1]
+      Position		      [760, 395, 835, 425]
+      ZOrder		      43
+      Filename		      "p5p5d_bias.mat"
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "To File3"
+      SID		      "63"
+      Ports		      [1]
+      Position		      [760, 445, 850, 475]
+      ZOrder		      44
+      Filename		      "p5p5d_rudder.mat"
     }
     Block {
       BlockType		      TransferFcn
@@ -2154,7 +2172,7 @@ Model {
       BlockType		      ZeroOrderHold
       Name		      "Zero-Order\nHold1"
       SID		      "51"
-      Position		      [275, 162, 305, 178]
+      Position		      [280, 162, 310, 178]
       ZOrder		      40
       NamePlacement	      "alternate"
       SampleTime	      "S_t"
@@ -2177,46 +2195,52 @@ Model {
       ZOrder		      28
       SrcBlock		      "Cargo ship"
       SrcPort		      1
-      Points		      [50, 0]
+      Points		      [115, 0]
       Branch {
-	ZOrder			141
-	Points			[65, 0]
+	ZOrder			183
+	Points			[0, 155]
 	Branch {
-	  ZOrder		  140
-	  DstBlock		  "Scope"
+	  ZOrder		  94
+	  Labels		  [1, 1]
+	  Points		  [-628, 0]
+	  Branch {
+	    ZOrder		    185
+	    Points		    [0, -56; -22, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    184
+	    Points		    [-51, 0]
+	    Branch {
+	      ZOrder		      143
+	      Points		      [0, 50]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      142
+	      DstBlock		      "Scope3"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Branch {
+	  ZOrder		  52
+	  Points		  [0, 110]
+	  DstBlock		  "Zero-Order\nHold"
 	  DstPort		  1
 	}
 	Branch {
-	  ZOrder		  31
-	  Points		  [0, 155]
-	  Branch {
-	    ZOrder		    139
-	    DstBlock		    "Mux1"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    52
-	    Points		    [0, 110]
-	    DstBlock		    "Zero-Order\nHold"
-	    DstPort		    1
-	  }
+	  ZOrder		  139
+	  DstBlock		  "Mux1"
+	  DstPort		  1
 	}
       }
       Branch {
-	ZOrder			94
-	Labels			[2, 1]
-	Points			[0, 155; -614, 0]
-	Branch {
-	  ZOrder		  143
-	  Points		  [0, 50]
-	  DstBlock		  "Mux"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  142
-	  DstBlock		  "Scope3"
-	  DstPort		  2
-	}
+	ZOrder			31
+	DstBlock		"Scope"
+	DstPort			1
       }
     }
     Line {
@@ -2264,16 +2288,8 @@ Model {
       Branch {
 	ZOrder			147
 	Points			[0, -85]
-	Branch {
-	  ZOrder		  102
-	  DstBlock		  "Sum"
-	  DstPort		  2
-	}
-	Branch {
-	  ZOrder		  101
-	  DstBlock		  "Scope3"
-	  DstPort		  1
-	}
+	DstBlock		"Scope3"
+	DstPort			1
       }
       Branch {
 	ZOrder			145
@@ -2298,8 +2314,18 @@ Model {
       }
       Branch {
 	ZOrder			65
-	DstBlock		"Mux1"
-	DstPort			3
+	Points			[412, 0]
+	Branch {
+	  ZOrder		  179
+	  Points		  [0, 70]
+	  DstBlock		  "To File2"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  178
+	  DstBlock		  "Mux1"
+	  DstPort		  3
+	}
       }
     }
     Line {
@@ -2334,16 +2360,16 @@ Model {
       ZOrder		      68
       SrcBlock		      "Mux1"
       SrcPort		      1
-      Points		      [5, 0]
+      Points		      [31, 0]
+      Branch {
+	ZOrder			176
+	DstBlock		"To File"
+	DstPort			1
+      }
       Branch {
 	ZOrder			76
 	Points			[0, 40]
 	DstBlock		"Scope1"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			72
-	DstBlock		"To File"
 	DstPort			1
       }
     }
@@ -2351,20 +2377,28 @@ Model {
       ZOrder		      121
       SrcBlock		      "Zero-Order\nHold1"
       SrcPort		      1
-      Points		      [17, 0]
+      Points		      [12, 0]
       Branch {
 	ZOrder			54
-	Points			[0, 140; 315, 0]
+	Points			[0, 140; 292, 0]
 	Branch {
-	  ZOrder		  119
-	  Points		  [0, 150]
-	  DstBlock		  "MATLAB Function"
+	  ZOrder		  177
+	  DstBlock		  "Mux1"
 	  DstPort		  2
 	}
 	Branch {
-	  ZOrder		  60
-	  DstBlock		  "Mux1"
-	  DstPort		  2
+	  ZOrder		  119
+	  Points		  [0, 150]
+	  Branch {
+	    ZOrder		    181
+	    DstBlock		    "To File3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    180
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    2
+	  }
 	}
       }
       Branch {
