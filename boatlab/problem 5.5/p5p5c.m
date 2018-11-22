@@ -11,5 +11,3 @@ x_min_0 = [0; 0; 0; 0; 0];
 
 data = struct('A_d', A_d,'B_d',B_d,'C_d',C_d, 'E_d',E_d,'Q',Q,'R',R,'P_min_0',P_min_0,'x_min_0',x_min_0,'I',eye(5));
 
-% [PHI, DELTA] = c2d(A, B, 1/10);
-% [PHI, GAMMA] = c2d(A, E, 1/10);
