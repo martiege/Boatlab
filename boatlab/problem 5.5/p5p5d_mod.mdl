@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.86"
+    ComputedModelVersion    "1.87"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -59,7 +59,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [8.0, 8.0, 1554.0, 882.0]
+      Location		      [8.0, 8.0, 1292.0, 1036.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -76,28 +76,16 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1879.0, 883.0]
-	  ZoomFactor		  [1.3159678858162356]
-	  Offset		  [-250.638557483731, 29.72189081706432]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1"
-	  Extents		  [1879.0, 883.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-239.02187500000002, -81.699999999999989]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1238.0, 855.0]
+	ZoomFactor		[1.0]
+	Offset			[-204.04066656161035, -30.113311434364959]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -117,7 +105,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB4AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAANAD///8AAAeEAAADvAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAT8AAADkAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAON/////wAAAAAAAAAA/"
@@ -131,9 +119,10 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sande"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 22 16:21:35 2018"
-  RTWModifiedTimeStamp	  464789620
-  ModelVersionFormat	  "1.%<AutoIncrement:86>"
+  LastModifiedDate	  "Sat Nov 24 09:34:24 2018"
+  RTWModifiedTimeStamp	  464952825
+  ModelVersionFormat	  "1.%<AutoIncrement:87>"
+  ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1228,7 +1217,7 @@ Model {
   }
   System {
     Name		    "p5p5d_mod"
-    Location		    [8, 8, 1562, 890]
+    Location		    [8, 8, 1300, 1044]
     Open		    on
     PortBlocksUseCompactNotation off
     SetDomainSpec	    off
@@ -1243,9 +1232,9 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "132"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "63"
+    SIDHighWatermark	    "64"
     Block {
       BlockType		      SubSystem
       Name		      "Cargo ship"
@@ -1261,7 +1250,7 @@ Model {
 	$ClassName		"Simulink.Mask"
 	Type			"Simple shipmodel for a cargo ship"
 	Description		"Measurement noise:\n	checked = noise on\n	unchecked = noise off \n\nCurrent:\n	checked = current on\n	u"
-	"nchecked = current off \n\nWaves: \n	checked = waves on\n	unchecked = waves off \n\nAuthor: Jørgen Spjøtvold, 9/10-20"
+	"nchecked = current off \n\nWaves: \n	checked = waves on\n	unchecked = waves off \n\nAuthor: Jï¿½rgen Spjï¿½tvold, 9/10-20"
 	"03\nTTK 4115 Linear system theory.\nModified by Jostein Bakkeheim 26/10-2006\n"
 	Array {
 	  Type			  "Simulink.MaskParameter"
@@ -1334,7 +1323,7 @@ Model {
 	    $ObjectID		    26
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Cargo ship"
-	    Description		    "S-function which simulates a cargo ship.\n\nAuthor: Jørgen Spjøtvold\n20.10-2003\nModified by J"
+	    Description		    "S-function which simulates a cargo ship.\n\nAuthor: Jï¿½rgen Spjï¿½tvold\n20.10-2003\nModified by J"
 	    "ostein Bakkeheim 27.10.2006"
 	  }
 	}
@@ -1994,13 +1983,11 @@ Model {
     Block {
       BlockType		      Mux
       Name		      "Mux"
-      SID		      "60"
-      Ports		      [2, 1]
-      Position		      [-130, 321, -125, 359]
-      ZOrder		      41
-      BlockMirror	      on
+      SID		      "64"
+      Ports		      [4, 1]
+      Position		      [680, 516, 685, 644]
+      ZOrder		      45
       ShowName		      off
-      Inputs		      "2"
       DisplayOption	      "bar"
     }
     Block {
@@ -2199,31 +2186,12 @@ Model {
     }
     Block {
       BlockType		      ToFile
-      Name		      "To File1"
-      SID		      "61"
-      Ports		      [1]
-      Position		      [-240, 327, -160, 353]
-      ZOrder		      42
-      BlockMirror	      on
-      Filename		      "p5p5d_com.mat"
-    }
-    Block {
-      BlockType		      ToFile
       Name		      "To File2"
       SID		      "62"
       Ports		      [1]
-      Position		      [760, 395, 835, 425]
+      Position		      [760, 565, 835, 595]
       ZOrder		      43
-      Filename		      "p5p5d_bias.mat"
-    }
-    Block {
-      BlockType		      ToFile
-      Name		      "To File3"
-      SID		      "63"
-      Ports		      [1]
-      Position		      [760, 445, 850, 475]
-      ZOrder		      44
-      Filename		      "p5p5d_rudder.mat"
+      Filename		      "p5p5d.mat"
     }
     Block {
       BlockType		      TransferFcn
@@ -2277,27 +2245,16 @@ Model {
 	Branch {
 	  ZOrder		  94
 	  Labels		  [1, 1]
-	  Points		  [-628, 0]
+	  Points		  [-650, 0]
 	  Branch {
 	    ZOrder		    185
-	    Points		    [0, -56; -22, 0]
 	    DstBlock		    "Sum"
 	    DstPort		    2
 	  }
 	  Branch {
 	    ZOrder		    184
-	    Points		    [-51, 0]
-	    Branch {
-	      ZOrder		      143
-	      Points		      [0, 50]
-	      DstBlock		      "Mux"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      142
-	      DstBlock		      "Scope3"
-	      DstPort		      2
-	    }
+	    DstBlock		    "Scope3"
+	    DstPort		    2
 	  }
 	}
 	Branch {
@@ -2308,8 +2265,18 @@ Model {
 	}
 	Branch {
 	  ZOrder		  139
-	  DstBlock		  "Mux1"
-	  DstPort		  1
+	  Points		  [64, 0]
+	  Branch {
+	    ZOrder		    224
+	    Points		    [0, 255]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    223
+	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
 	}
       }
       Branch {
@@ -2356,48 +2323,49 @@ Model {
     Line {
       Name		      "Est"
       ZOrder		      93
-      Labels		      [2, 0]
       SrcBlock		      "Memory1"
       SrcPort		      1
-      Points		      [-310, 0; 0, -110]
+      Points		      [-53, 0]
       Branch {
-	ZOrder			147
-	Points			[0, -85]
-	DstBlock		"Scope3"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			145
+	ZOrder			226
+	Points			[0, 105]
 	DstBlock		"Mux"
 	DstPort			2
+      }
+      Branch {
+	ZOrder			225
+	Labels			[2, 0]
+	Points			[-284, 0; 0, -195]
+	DstBlock		"Scope3"
+	DstPort			1
       }
     }
     Line {
       ZOrder		      42
       SrcBlock		      "Memory"
       SrcPort		      1
-      Points		      [-15, 0; 0, -50]
+      Points		      [-15, 0]
       Branch {
-	ZOrder			175
-	DstBlock		"Sum1"
-	DstPort			2
+	ZOrder			232
+	Points			[0, 235]
+	DstBlock		"Mux"
+	DstPort			4
       }
       Branch {
-	ZOrder			85
-	DstBlock		"Scope2"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			65
-	Points			[412, 0]
+	ZOrder			231
+	Points			[0, -50]
 	Branch {
-	  ZOrder		  179
-	  Points		  [0, 70]
-	  DstBlock		  "To File2"
+	  ZOrder		  175
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Branch {
+	  ZOrder		  85
+	  DstBlock		  "Scope2"
 	  DstPort		  1
 	}
 	Branch {
-	  ZOrder		  178
+	  ZOrder		  65
 	  DstBlock		  "Mux1"
 	  DstPort		  3
 	}
@@ -2465,14 +2433,15 @@ Model {
 	  ZOrder		  119
 	  Points		  [0, 150]
 	  Branch {
-	    ZOrder		    181
-	    DstBlock		    "To File3"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    180
+	    ZOrder		    229
 	    DstBlock		    "MATLAB Function"
 	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    228
+	    Points		    [0, 135]
+	    DstBlock		    "Mux"
+	    DstPort		    3
 	  }
 	}
       }
@@ -2483,10 +2452,10 @@ Model {
       }
     }
     Line {
-      ZOrder		      148
+      ZOrder		      222
       SrcBlock		      "Mux"
       SrcPort		      1
-      DstBlock		      "To File1"
+      DstBlock		      "To File2"
       DstPort		      1
     }
   }
