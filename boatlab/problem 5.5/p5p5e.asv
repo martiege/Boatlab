@@ -29,8 +29,4 @@ ylabel("Rudder info [°]");
 title("Rudder input and bias estimation");
 
 figure(3);
-plot(wave_time, wave_actual, wave_time, wave_estimate, wave_time, wave_actual - wave_estimate);
-legend("Actual wave influence", "Estimated wave influence", "Difference");
-xlabel("Time [s]");
-ylabel("Wave influence [°]");
-title("Wave influence from the system and the Kalman filter");
+plot(wave_time, 

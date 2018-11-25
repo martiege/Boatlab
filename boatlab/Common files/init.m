@@ -59,5 +59,23 @@ S_t = inv(S_f);
 C_d = C;
 D_d = D; % 0, ingen bidrag
 
-p5p5b;
-p5p5c;
+res = load("noise_meas.mat");
+res = res.ans;
+
+time = res(1, :);
+meas = res(2, :) * pi / 180;
+
+R = var(meas) / S_t;
+
+Q = [30, 0; 
+     0, 1e-6];
+
+P_min_0 = [1,    0,        0,      0,   0;
+           0,    0.013,    0,      0,   0;
+           0,    0,        pi^2,   0,	0;
+           0,    0,        0,      1,   0;
+           0,    0,        0,      0,   2.5e-3];
+
+x_min_0 = [0; 0; 0; 0; 0];
+
+data = struct('A_d', A_d,'B_d',B_d,'C_d',C_d, 'E_d',E_d,'Q',Q,'R',R,'P_min_0',P_min_0,'x_min_0',x_min_0,'I',eye(5));
