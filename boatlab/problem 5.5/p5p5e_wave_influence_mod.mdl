@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.81"
+    ComputedModelVersion    "1.82"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -116,9 +116,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Martin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Nov 25 18:41:41 2018"
-  RTWModifiedTimeStamp	  465072078
-  ModelVersionFormat	  "1.%<AutoIncrement:81>"
+  LastModifiedDate	  "Sun Nov 25 20:15:04 2018"
+  RTWModifiedTimeStamp	  465072131
+  ModelVersionFormat	  "1.%<AutoIncrement:82>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1407,7 +1407,7 @@ Model {
 	  Ports			  [0, 1]
 	  Position		  [500, 45, 530, 75]
 	  ZOrder		  -10
-	  LibraryVersion	  "1.441"
+	  LibraryVersion	  "1.444"
 	  SourceBlock		  "simulink/Sources/Band-Limited\nWhite Noise"
 	  SourceType		  "Band-Limited White Noise."
 	  SourceProductName	  "Simulink"
@@ -2138,20 +2138,20 @@ Model {
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('Mi"
-      "nYLimReal','-12.38818','MaxYLimReal','34.54922','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','34.54922','"
-      "LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686"
-      "274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235"
-      "29411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176"
-      "47058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Signal"
-      "Label>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Est','Cargo ship/1"
-      "'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-12.38818','MaxYLimReal',"
-      "'34.54922','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','34.54922','LegendVisibility','On','XGrid',true,'"
-      "YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862"
-      "74509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.066"
-      "6666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.058"
-      "8235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,"
-      "'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a','Posi"
-      "tion',[1 41 1920 963])"
+      "nYLimReal','-4.45013','MaxYLimReal','9.57237','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','9.57237','Leg"
+      "endVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274"
+      "509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235294"
+      "11764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176470"
+      "58823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
+      "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Est','Cargo ship/1'}}"
+      ",'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-4.45013','MaxYLimReal','9.5"
+      "7237','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','9.57237','LegendVisibility','On','XGrid',true,'YGrid'"
+      ",true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745098"
+      "03922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.066666666"
+      "6666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.058823529"
+      "4117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceA"
+      "tStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',"
+      "[1 41 1920 963])"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -2229,13 +2229,6 @@ Model {
       ZOrder		      86
       NamePlacement	      "alternate"
       SampleTime	      "S_t"
-    }
-    Line {
-      ZOrder		      177
-      SrcBlock		      "Sum1"
-      SrcPort		      1
-      DstBlock		      "Zero-Order\nHold1"
-      DstPort		      1
     }
     Line {
       ZOrder		      185

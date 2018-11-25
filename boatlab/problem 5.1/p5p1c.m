@@ -13,16 +13,16 @@ omega2_noise = omega2_c(2, :) - omega2_b(2, :);
 
 
 figure(1);
-plot(omega1_b(1, :), omega1_b(2, :), omega1_c(1, :), omega1_c(2, :), omega1_c(1, :), omega1_noise);
-legend("Response from omega 1 without noise", "Response from omega 1 with noise", "Noise");
+plot(omega1_b(1, :), omega1_b(2, :), omega1_c(1, :), omega1_c(2, :));
+legend("Response from omega 1 without noise", "Response from omega 1 with noise");
 title("Response omega 1");
 xlabel("Time [s]");
 ylabel("Degrees [°]");
 
 
 figure(2);
-plot(omega2_b(1, :), omega2_b(2, :), omega2_c(1, :), omega2_c(2, :), omega2_c(1, :), omega2_noise);
-legend("Response from omega 2 without noise", "Response from omega 2 with noise", "Noise");
+plot(omega2_b(1, :), omega2_b(2, :), omega2_c(1, :), omega2_c(2, :));
+legend("Response from omega 2 without noise", "Response from omega 2 with noise");
 title("Response omega 2");
 xlabel("Time [s]");
 ylabel("Degrees [°]");
